@@ -88,8 +88,10 @@ rivkeep <- c(wchpa$Name,"Whiteadder Water (Billie Burn confluence to tidal limit
              "Blackadder Water (Manse Burn to Howe Burn confluences)", "Blackadder Water (Howe Burn confluence to Whiteadder Water)")
 
 
-rivers <- st_read(here("data", "SEPA_RIVER_WATERBODY_CLASSIFICATIONS_WGS84.shp" )) %>% 
-  filter(WATER_BO_1 %in% rivkeep) #%>% 
+rivers <- readRDS("data/scot_rivers.rds")
+
+# rivers <- scot_rivers %>% 
+#   filter(WATER_BO_1 %in% rivkeep) #%>% 
   # filter(OBJECTID %in% c(29454,29907,30262,31181,29817))
 
 # need to join rivers data to english data of same type 
