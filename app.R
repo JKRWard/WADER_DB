@@ -127,7 +127,7 @@ ui <- fluidPage(
                 The data displayed here under the datasets tab are those that were mad available for the WADER project. Much of the information provided to inform the WADER project baseline were reports that informend condition monitoring, these can be seen under the Reports tab.
                 Where the underlying data that these reports were based on were not provided they are not detailed here."),
               navlistPanel(
-                id = "tabset",
+                id = "tabset2",
                 tabPanel("River Tweed SAC ",
                          navset_tab(
                            nav_panel( "Datasets",

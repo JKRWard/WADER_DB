@@ -11,7 +11,7 @@ display_mapUI <- function(id, heading, description, map_info){
       selectInput(NS(id, "radio"), "Select dataset", choices = map_info$selection),
       p(strong("The Data being displayed are:")),
       textOutput(NS(id,"descript")),
-      leafletOutput(NS(id, "leaflet_map"), height = "500px"),
+      tmapOutput(NS(id, "leaflet_map"), height = "500px"),
       p(strong("Data Preview")),
       textOutput(NS(id,"map_tab_deets")),
       DT::dataTableOutput(NS(id,"map_tab")),
